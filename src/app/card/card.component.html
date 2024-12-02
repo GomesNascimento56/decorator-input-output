@@ -1,0 +1,21 @@
+<div class="card">
+    <!--1° Exemplo  de  interpolação-->
+    <!--div class="card__plan card__item">Plano <b>{{tipo}}</b></div-->
+    <!--div class="card__price card__item">{{getFullPreco()}}</div-->
+
+    <!--2° Exemplo  de  interpolação-->
+    <div class="card__plan card__item">Plano <b>{{ plano.info.tipo }}</b></div>
+    <div class="card__plan card__item">Plano <b>R$ {{ plano.info.preco }},00/Mês</b></div>
+    <app-card-button></app-card-button>
+    <app-cancel-button></app-cancel-button>
+
+    <div class="global">estilo Global</div>
+
+    <div class="emulated">Emuleted - isola o estilo em um componente em especifico.
+      <br>encapsulation: ViewEncapsulation.Emulated,
+    </div>
+
+    <mat-slider min="1" max="5" step="0.5">
+        <input matSliderThumb value="1.5">
+      </mat-slider>
+</div>

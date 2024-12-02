@@ -1,0 +1,13 @@
+//caminho absoluto @import"src/styles.scss";
+
+@import"../../styles/variables";
+
+.card-button{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 25px;
+    background-color:$bgColor;
+    padding: 10px;
+    cursor: pointer;
+}

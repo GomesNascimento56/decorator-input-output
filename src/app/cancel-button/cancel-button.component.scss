@@ -1,0 +1,13 @@
+@import"../../styles/variables";
+
+.cancel-button{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 25px;
+    background-color:$bgColorBtnCancel;
+    padding: 10px;
+    cursor: pointer;
+    color:azure;
+}
+

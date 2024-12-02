@@ -1,10 +1,16 @@
 import { TestBed } from '@angular/core/testing';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppComponent],
+      imports: [
+        RouterModule.forRoot([])
+      ],
+      declarations: [
+        AppComponent
+      ],
     }).compileComponents();
   });
 
@@ -14,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'decorator-input-output' title`, () => {
+  it(`should have as title 'projeto-componentes'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('decorator-input-output');
+    expect(app.title).toEqual('projeto-componentes');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, decorator-input-output');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, projeto-componentes');
   });
 });
