@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'projeto-componentes';
+  // propriedades, valores do componentes pai
+  canPlanType = 'Simples';
+  canPlanPrice = 130;
+
+  // canPlaType3 = 'Premium2';
+  // canPlanPrice3 = 450;
+
+
 }
