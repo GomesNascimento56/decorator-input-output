@@ -2,11 +2,11 @@
    
     <div class="card__plan card__item">Plano<b>{{planType}}</b></div>
     <div class="card__plan card__item">R${{planPrice}},00/Mês</div>
-    //esq - buttonClick método do componente filho
-    //dir -buttonCliked  método do componente pai
+    <!-- esq - buttonClick método do componente filho
+    dir -buttonCliked  método do componente pai -->
 
-    // o método buttonClick tem que ser criado no mesmo app-card-button selector: 'app-card-button'
-    <app-card-button (buttonClick)="buttonClicked()"></app-card-button>
+    <!-- o método buttonClick tem que ser criado no mesmo app-card-button selector: 'app-card-button' -->
+    <app-card-button (buttonClick)="buttonClicked($event)"></app-card-button>
     <app-cancel-button></app-cancel-button>
 
   

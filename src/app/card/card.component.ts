@@ -17,8 +17,8 @@ export class CardComponent {
   // @Input() planType3: String = '';
   // @Input({required:true}) planPrice3: number = 0;
 
-  buttonClicked(){
-    console.log('buttonClicked');
+  buttonClicked(valueEmited:boolean){
+    console.log('buttonClicked', valueEmited);
   }
 }
  
